@@ -1,0 +1,89 @@
+:root {
+	--slate-300: hsl(212, 45%, 89%);
+	--slate-500: hsl(216, 15%, 48%);
+	--slate-900: hsl(218, 44%, 22%);
+	--white: hsl(0, 0%, 100%);
+	--font-size: 15px;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+.outfit {
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: 400;
+}
+.outfit-bold {
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: 700;
+}
+body {
+	background-color: var(--slate-300);
+	font-size: var(--font-size);
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+.container {
+	height: 95vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.rounded {
+	border-radius: 1em;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--white);
+	padding: 1.15em;
+	height: auto;
+	max-width: 100%;
+	margin: 1em;
+}
+
+.card-img {
+	max-width: 100%;
+	height: auto;
+}
+
+.card-heading {
+	color: var(--slate-900);
+	font-size: 1.6em;
+	text-align: center;
+	width: 22ch;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+
+.card-text {
+	color: var(--slate-500);
+	font-size: 1.1em;
+	text-align: center;
+	width: 30ch;
+	margin-bottom: 1.5em;
+}
+
+@media (min-width: 768px) {
+	.card {
+		max-width: 20%;
+	}
+	.card-heading {
+		width: 24ch;
+		font-size: 1.5em;
+	}
+}
