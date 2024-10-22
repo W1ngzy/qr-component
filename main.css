@@ -29,7 +29,7 @@ body {
 }
 .attribution {
 	justify-self: flex-end;
-	font-size: 11px;
+	font-size: 1.2em;
 	text-align: center;
 }
 .attribution a {
@@ -102,6 +102,9 @@ body {
 	}
 	.card-text {
 		font-size: clamp(1em, 3vw, 1.25em);
+	}
+	.attribution {
+		font-size: 1em;
 	}
 }
 
